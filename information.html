@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<nav>
+		<ul>
+		  <li><a href="listview.html">EDIT</a></li>
+		  <li><a href="information.html"><b>Registration</b></a></li>
+		 
+		  <li><a href="#contact">Contact</a></li>
+		</ul>
+	  </nav>
+	<title>Student Registration Form</title>
+	<style>
+		#input-container {
+		  display: none;
+		}
+		#input-container.show {
+		  display: block;
+		}
+	  </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Student Registration Form</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name">
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email">
+			<label for="erp">ERP ID:</label>
+			<input type="text" id="erpid" name="erpid">
+			<label for="erppass">ERP Password:</label>
+			<input type="text" id="erppass" name="erppass">
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone">
+			<label for="address">Address:</label>
+			<textarea id="address" name="address"></textarea>
+		</form>
+		<button id="add-name-btn">Add </button>
+	</div>
+	<br>
+	<br>
+
+	<div class="container">
+		<h1>class test 1 happen?</h1>
+		<form>
+			<div>
+				<input type="radio" name="gender" value="male" onclick="showInput()"> Yes<br>
+				<input type="radio" name="gender" value="female" onclick="hideInput()"> No<br>
+			</div>
+
+			<div id="input-container">
+				<h2>Enter Marks</h2>
+				<input type="text" id="input-text">
+			  </div>
+			<button type="button">Submit</button>
+			<div>
+				
+			</div>
+		
+			</div>
+			
+		</form>
+		<br>
+		
+	</div>
+    
+    <div class="container">
+		<h1>class test 2 happen?</h1>
+		<form>
+			<div>
+				<input type="radio" id="yes" name="name" value="yes">
+				<label for="yes">Yes</label>
+			</div>
+			<div>
+				<input type="radio" id="no" name="name" value="no">
+				<label for="no">No</label>
+			</div>
+			<div id="name-input-container" style="display: none;">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+			</div>
+			<button type="button">Submit</button>
+		</form>
+	</div>
+
+	<br>
+
+    <div class="container">
+		<h1>Sessional is happen?</h1>
+		<form>
+			<div>
+				<input type="radio" id="yes" name="name" value="yes">
+				<label for="yes">Yes</label>
+			</div>
+			<div>
+				<input type="radio" id="no" name="name" value="no">
+				<label for="no">No</label>
+			</div>
+			<div id="name-input-container" style="display: none;">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+			</div>
+			<button type="button">Submit</button>
+		</form>
+	</div>
+
+	<br>
+
+    <div class="container">
+		<h1>Assingnment 1 st sumbitted?</h1>
+		<form>
+			<div>
+				<input type="radio" id="yes" name="name" value="yes">
+				<label for="yes">Yes</label>
+			</div>
+			<div>
+				<input type="radio"  id="no" name="name" value="no">
+				<label for="no">No</label>
+			</div>
+			<div id="name-input-container" style="display: none;">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+			</div>
+			<button type="button">Submit</button>
+		</form>
+	</div>
+	<br>
+
+    <div class="container">
+		<h1>Assingnment 2 st sumbitted?</h1>
+		<form>
+			<div>
+				<input type="radio" id="yes" name="name" value="yes">
+				<label for="yes">Yes</label>
+			</div>
+			<div>
+				<input type="radio" id="no" name="name" value="no">
+				<label for="no">No</label>
+			</div>
+			<div id="name-input-container" style="display: none;">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+			</div>
+			<button type="button">Submit</button>
+		</form>
+	</div>
+	
+	<script>
+		function showInput() {
+		  var inputContainer = document.getElementById("input-container");
+		  inputContainer.classList.add("show");
+		}
+
+		function hideInput() {
+        var inputContainer = document.getElementById("input-container");
+        inputContainer.classList.remove("show");
+      }
+	  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Account Creation and Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+
+    <div class="login-container">
+      <h2>Login</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" >
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" >
+        <label for="account-type">Account Type:</label>
+        <select id="account-type" name="account-type">
+          <option value="admin">Teacher</option>
+          <option value="user">Studet</option>
+        </select>
+       <button type="button" id="login-btn">Login</button>
+        <br>
+        <button  type="button"  onClick="parent.location='create.html'" id ="create ">Create Account</button>
+        
+        
+
+
+        
+
+
+      </form>
+    </div>
+    <script>
+      
+      function myFunction() {
+        window.location.href="create.html";  
+      }
+      
+      const loginBtn = document.getElementById("login-btn");
+loginBtn.addEventListener("click", function() {
+  // get the username, password, and account type values
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  const accountType = document.getElementById("account-type").value;
+
+  // perform login validation
+  if (accountType === "admin" && username === "admin" && password === "admin123") {
+    // redirect to the dashboard page for admin
+    window.location.href = "interface.html";
+  } else if (accountType === "user" && username === "student" && password === "student123") {
+    // redirect to the student page for user
+    window.location.href = "student.html";
+  } else {
+    alert("Invalid username, password, or account type. Please try again.");
+  }
+});
+
+      </script>
+  </body>
+</html>
